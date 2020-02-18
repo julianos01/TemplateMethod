@@ -1,7 +1,8 @@
 
 /*Clase abstracta que define la plantilla "Tenplate Method" */
 public abstract class BebidaCafeina {
-     final void prepararReceta() {
+   //Implementación del método plantilla que ejecuta funciones comunes
+    final void prepararReceta() {
         hervirAgua();
         elaborarBebida();
         servir();
@@ -11,8 +12,8 @@ public abstract class BebidaCafeina {
      }
      
      //Métodos abstractos que serán implementados en las subclases 
-     abstract void elaborarBebida();
-     abstract void agregarAdiciones();
+     protected abstract void elaborarBebida();
+     protected abstract void agregarAdiciones();
      
      //métodos concretos comunes en el proceso de preparar ambas bebidas
      void hervirAgua() {

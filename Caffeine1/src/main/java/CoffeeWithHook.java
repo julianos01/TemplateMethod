@@ -3,13 +3,20 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
+// clase CoffeeWithHook que extiende de la clase abstracta Bebida Cafeina
 public class CoffeeWithHook extends BebidaCafeina {
     
     public void elaborarBebida() {
     System.out.println("Goteando café a través del filtro");
     }
+   
+/*    Si intentaramos redefinir el template method tenemos un error en la aplicación, 
+      dado que el método de plantilla no puede ser sobreescrito en las subclases. 
+   public void prepararReceta()
+   {
        
+   }
+*/
     
     public void agregarAdiciones() {
     System.out.println("Agregando leche y azúcar");

@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;   
 
-
+//clase TeaWithHook que extiende de la clase abstracta Bebida Cafeina
 public class TeaWithHook extends BebidaCafeina {
      public void elaborarBebida() {
     System.out.println("Preparando el tea");
